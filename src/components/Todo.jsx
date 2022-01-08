@@ -34,7 +34,7 @@ function Todo({ todos, completeTodo, removeTodo, editTodo, handleCheckbox }) {
         <div className="flex items-center ml-3">
           <input
             type="checkbox"
-            className="accent-indigo-600 focus:outline-none cursor-pointer xl:w-[15px] xl:h-[15px]"
+            className="accent-indigo-600 focus:outline-none cursor-pointer min-w-[15px] min-h-[15px]"
             onClick={() => completeTodo(todo.id)}
             checked={todo.isChecked ? todo.isChecked : false}
             onChange={() => handleCheckbox(todo.id)}
