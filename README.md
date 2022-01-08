@@ -7,4 +7,4 @@
 ## Made with
 
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [TailwindCSS](https://tailwindcss.com/) - An utility-first CSS framework
+- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
