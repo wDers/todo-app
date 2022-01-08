@@ -49,10 +49,12 @@ function Todo({ todos, completeTodo, removeTodo, editTodo, handleCheckbox }) {
           </div>
         </div>
         <div className="flex gap-2 text-lg text-indigo-600 mr-3">
-          <VscEdit
-            className="cursor-pointer"
-            onClick={() => setEdit({ id: todo.id, value: todo.text })}
-          />
+          {!todo.isComplete ? (
+            <VscEdit
+              className="cursor-pointer"
+              onClick={() => setEdit({ id: todo.id, value: todo.text })}
+            />
+          ) : null}
           <BsTrash
             className="cursor-pointer"
             onClick={() => removeTodo(todo.id)}
