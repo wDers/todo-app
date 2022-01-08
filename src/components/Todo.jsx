@@ -39,7 +39,12 @@ function Todo({ todos, completeTodo, removeTodo, editTodo, handleCheckbox }) {
             checked={todo.isChecked ? todo.isChecked : false}
             onChange={() => handleCheckbox(todo.id)}
           />
-          <div className="mx-3 break-all leading-4" key={todo.id}>
+          <div
+            className="mx-3 break-all leading-4"
+            key={todo.id}
+            onClick={() => completeTodo(todo.id)}
+            onClickCapture={() => handleCheckbox(todo.id)}
+          >
             {todo.text}
           </div>
         </div>
