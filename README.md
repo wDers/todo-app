@@ -1,7 +1,5 @@
 # Todo Application
 
-[https://todo-app-wders.vercel.app/](https://todo-app-wders.vercel.app/)
-
 [![Project thumbnail](./doc/thumbnail.png)](https://todo-app-wders.vercel.app/)
 
 ## Made with
